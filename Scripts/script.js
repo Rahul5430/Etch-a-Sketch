@@ -11,8 +11,8 @@ function resizeCells() {
     borderWidth = gridSize * 2;
     cells = document.getElementsByClassName("cells");
     totalWidth = document.getElementById("container").offsetWidth;
-    cellLength = (totalWidth - borderWidth) / gridSize;
-    for ( let i = 0; i < cells.length; i++) {
+    cellLength = ((totalWidth) - borderWidth) / gridSize;
+    for (let i = 0; i < cells.length; i++) {
         cells[i].style.width = cellLength + "px";
         cells[i].style.height = cellLength + "px";
     };
@@ -39,7 +39,7 @@ function  makeGrid() {
     gridSize = document.getElementById("gridSize").value || 16;
     borderWidth = gridSize * 2;
     totalWidth = document.getElementById("container").offsetWidth;
-    cellLength = (totalWidth - borderWidth) / gridSize;
+    cellLength = ((totalWidth) - borderWidth) / gridSize;
 
     for (let i = 0; i < (gridSize * gridSize); i++) {
         cell = document.createElement('div');
