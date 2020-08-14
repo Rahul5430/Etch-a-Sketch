@@ -9,6 +9,7 @@ html {
     margin: 0;
 }
 body {
+    overflow: auto;
     display: flex;
     text-align: center;
     font-family: 'Lobster', cursive;
@@ -80,14 +81,14 @@ h2 {
     right: 2vw;
     margin: 10px;
 }
-@media all and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #container {
         height: 600px !important;
         width: 600px !important;
     }
 }
 
-@media all and (max-width: 620px) {
+@media screen and (max-width: 620px) {
     #container {
         height: 500px !important;
         width: 500px !important;
